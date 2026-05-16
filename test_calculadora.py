@@ -21,6 +21,13 @@ def test_divisao_comum():
     calc = Calculadora()
     assert calc.divisao(10, 2) == 5
 
+def test_potenciacao():
+    calc = Calculadora()
+    
+    assert calc.potenciacao(2, 3) == 8
+    assert calc.potenciacao(5, 0) == 1
+    assert calc.potenciacao(4, 0.5) == 2.0
+
 #--- Teste de Integração ---
 def test_varias_operacoes():
     calc = Calculadora()
